@@ -1,0 +1,34 @@
+{
+  "name": "bms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "ssl": "npx local-ssl-proxy --key /etc/letsencrypt/live/bmysales.com/privkey.pem --cert /etc/letsencrypt/live/bmysales.com/fullchain.pem --source 443 --target 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "clsx": "^2.0.0",
+    "config": "^3.3.9",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "formik": "^2.4.3",
+    "local-ssl-proxy": "^2.0.5",
+    "next": "13.4.12",
+    "next-videos": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "smooth-scrollbar": "^8.8.4",
+    "typescript": "5.1.6",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react-gtm-module": "^2.0.1"
+  }
+}

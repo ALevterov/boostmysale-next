@@ -1,0 +1,189 @@
+.section {
+  padding-top: 5.208vw;
+  background: rgba(239, 239, 239, 0.9);
+}
+.container {
+  padding: 3.125vw;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  gap: 17.479vw;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 368px;
+}
+.left .top,
+.right .top .text {
+  color: #fff;
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  font-kerning: none;
+}
+.left .bottom {
+  color: #fff;
+  font-size: 1.302vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  font-kerning: none;
+  font-family: 'SF Pro Display';
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 7.29vw;
+}
+.right .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.required {
+  color: #827b7b;
+  font-size: 1.0416vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-kerning: none;
+}
+.right .bottom {
+	position: relative;
+}
+.inputInner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.604vw;
+}
+.inputBlock {
+  display: flex;
+  gap: 1.5625vw;
+  justify-content: space-between;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.additionalText {
+  color: #fff;
+  font-size: 1.0416vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-kerning: none;
+}
+.btn {
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(13px);
+  width: 100%;
+  height: 2.916vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4.8958vw;
+
+  color: #fff;
+  font-size: 1.302vw;
+  font-style: normal;
+  font-kerning: none;
+  font-weight: 300;
+  line-height: 100%;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgba(255, 177, 0, 0.64);
+  backdrop-filter: blur(13px);
+  cursor: pointer;
+}
+.btn:disabled:hover {
+  background-color: rgba(255, 255, 255, 0.34);
+  cursor: auto;
+}
+.formError {
+  color: red;
+}
+.mobileBg {
+  display: none;
+}
+.messageBox  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 33px 15px 15px 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .left,
+  .right {
+    position: relative;
+    z-index: 2;
+  }
+  .left .top,
+  .right .top .text {
+    font-size: 20px;
+    white-space: normal;
+  }
+  .left .top {
+    text-align: center;
+  }
+  .left .bottom {
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 150%;
+  }
+  .required {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .right {
+  }
+  .inputInner {
+    flex-direction: column;
+  }
+  .inputBlock {
+    flex-direction: column;
+  }
+  .additionalText {
+    font-size: 15px;
+  }
+  .btn {
+    margin-top: 30px;
+    border-radius: 8.25px;
+    background: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(9.75px);
+    font-size: 15px;
+    line-height: 150%;
+    height: 42px;
+    width: 100%;
+  }
+  .mobileBg {
+    display: block;
+    position: absolute;
+    height: 100%;
+    /* max-height: 100%; */
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* transform: translateX(-30%); */
+  }
+}

@@ -1,0 +1,15 @@
+.inscription {
+  color: #000;
+  font-size: 1.0416vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 7px;
+  font-kerning: none;
+}
+@media screen and (max-width: 768px) {
+  .inscription {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}

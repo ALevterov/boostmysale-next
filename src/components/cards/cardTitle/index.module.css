@@ -1,0 +1,35 @@
+.title {
+  color: #f0a700;
+  font-size: 1.302vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  padding-left: 0.625vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-kerning: none;
+}
+.title:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0.104vw;
+  height: 0.885vw;
+  background-color: var(--orange);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 18.75px;
+    padding-left: 7px;
+    white-space: normal;
+  }
+  .title:before {
+    height: calc(100% - 10px);
+    width: 1.5px;
+    /* height: 12.75px; */
+  }
+}
